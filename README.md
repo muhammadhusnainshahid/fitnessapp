@@ -1,16 +1,59 @@
-# fitness_app
+# 🏋️ Fitness App
 
-A new Flutter project.
+A sleek Flutter application for tracking fitness activities and stats!
 
-## Getting Started
+## ✨ Features
 
-This project is a starting point for a Flutter application.
+- 📊 Track workouts, steps, and calories burned.
+- ⏱️ Timer and session logging for different exercises.
+- 🧪 Organized architecture with clear separation of concerns (UI, Controller, Model, Service).
+- 📱 Responsive UI with Flutter ScreenUtil for different devices.
+- 💾 Data persistence with local database and optional cloud sync.
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## 📸 Screenshots
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+| App Screenshots |
+|-----------------|
+| ![Home Screen](https://user-images.githubusercontent.com/YOUR_USERNAME/screenshots/home.png) |
+| ![Stats Screen](https://user-images.githubusercontent.com/YOUR_USERNAME/screenshots/stats.png) |
+| ![Workout Detail](https://user-images.githubusercontent.com/YOUR_USERNAME/screenshots/workout.png) |
+
+---
+
+## 🧱 Project Structure
+
+<img width="391" height="242" alt="Project Structure" src="https://user-images.githubusercontent.com/YOUR_USERNAME/screenshots/project-structure.png" />
+
+---
+
+## 🧑‍💻 Author
+
+### Muhammad Husnain Shahid
+
+<p align="left">
+  <a href="https://github.com/muhammadhusnainshahid">
+    <img src="https://img.shields.io/badge/GitHub-Follow-blue?logo=github" alt="GitHub Follow"/>
+  </a>
+  <a href="https://www.instagram.com/the.husnainshahid">
+    <img src="https://img.shields.io/badge/Instagram-Follow-e4405f?logo=instagram" alt="Instagram"/>
+  </a>
+  <a href="https://www.linkedin.com/in/muhammad-husnain-shahid-36b34b26b">
+    <img src="https://img.shields.io/badge/LinkedIn-Connect-0077B5?logo=linkedin" alt="LinkedIn"/>
+  </a>
+</p>
+
+If you liked this project, consider giving it a ⭐ and sharing it with others.
+
+---
+
+## ☕ Support My Work
+
+Consider supporting me to keep creating open-source Flutter projects:
+
+<p align="left">
+  <a href="https://www.buymeacoffee.com/muhammadhusnainshahid" target="_blank">
+    <img src="https://img.shields.io/badge/BuyMeACoffee-Support-FFDD00?logo=buymeacoffee" alt="Buy Me a Coffee"/>
+  </a>
+</p>
