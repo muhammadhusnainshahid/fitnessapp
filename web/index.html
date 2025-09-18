@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Fitness App</title>
+    <base href="/" />
+
+    <!-- ✅ Firebase JS SDK (latest) -->
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
+
+      const firebaseConfig = {
+        apiKey: "AIzaSyDy8uT-1Ce1tntOEvcWmWwl4l-rYvBujNc",
+        authDomain: "fitness-app-934f0.firebaseapp.com",
+        projectId: "fitness-app-934f0",
+        storageBucket: "fitness-app-934f0.firebasestorage.app",
+        messagingSenderId: "177260480258",
+        appId: "1:177260480258:web:3c60fc85e87f0f38f9241b",
+        measurementId: "G-D3CSQYFWFQ"
+      };
+
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
+  </head>
+  <body>
+    <script src="main.dart.js" type="application/javascript"></script>
+  </body>
+</html>
