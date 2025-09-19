@@ -24,8 +24,6 @@ A modern fitness mobile app built with **Flutter** that helps users track their 
 
 ## 🧱 Project Structure
 
-<img width="391" height="242" alt="Project Structure" src="https://user-images.githubusercontent.com/YOUR_USERNAME/screenshots/project-structure.png" />
-
 ```
 
 features/
