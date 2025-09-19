@@ -18,20 +18,7 @@ class AppColors {
     },
   );
 
-  // Main Colors
-  static const Color primary = Color(0xFF4285F4);
-  static const Color secondary = Color(0xFF34A853);
-  static const Color accent = Color(0xFFFBBC05);
-  static const Color error = Color(0xFFEA4335);
 
-  // Nutrition Colors (from your screens)
-  static const Color protein = Color(0xFFFF6B6B);
-  static const Color carbs = Color(0xFF51CF66);
-  static const Color fats = Color(0xFFFCC419);
-  static const Color fruitCategory = Color(0xFFFF9F1C);
-  static const Color vegetableCategory = Color(0xFF2EC4B6);
-  static const Color meatCategory = Color(0xFFE71D36);
-  static const Color vegetarianCategory = Color(0xFF662E9B);
 
   // Neutral Colors
   static const Color black = Color(0xFF000000);
@@ -54,27 +41,7 @@ class AppColors {
   static const Color card = white;
   static const Color cardDark = Color(0xFF1E1E1E);
 
-  // Semantic Colors
-  static const Color success = Color(0xFF34A853);
-  static const Color warning = Color(0xFFFBBC05);
-  static const Color danger = Color(0xFFEA4335);
-  static const Color info = Color(0xFF4285F4);
 
-  // UI Elements
-  static const Color divider = Color(0xFFDADCE0);
-  static const Color border = Color(0xFFE0E0E0);
-  static const Color shadow = Color(0x42000000);
-  static const Color overlay = Color(0x52000000);
-
-  // Special Colors
-  static const Color transparent = Color(0x00000000);
-  static const Color shimmerBase = Color(0xFFE0E0E0);
-  static const Color shimmerHighlight = Color(0xFFF5F5F5);
-
-  // Gradient Colors
-  static const LinearGradient primaryGradient = LinearGradient(
-    begin: Alignment.topLeft,
-    end: Alignment.bottomRight,
     colors: [Color(0xFF4285F4), Color(0xFF34A853)],
   );
 
@@ -85,9 +52,6 @@ class AppColors {
   static const Color scanScreenOverlay = Color(0x52000000);
   static const Color successBackground = Color(0xFFE8F5E9);
 
-  // Text variants
-  static const Color textCaption = Color(0xFF70757A);
-  static const Color textHint = Color(0xFF9AA0A6);
 
   // Missing colors that were declared but not initialized
   static const Color primaryDark = Color(0xFF1967D2);
