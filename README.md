@@ -11,7 +11,6 @@ A sleek Flutter application for tracking fitness activities and stats!
 - 💾 Data persistence with local database and optional cloud sync.
 
 ---
----
 
 ## 🚀 Live Demo
 
@@ -24,6 +23,7 @@ A sleek Flutter application for tracking fitness activities and stats!
 </p>
 
 ---
+
 ## 📸 Screenshots
 
 | SPLASH | WELCOME | SIGNIN |
@@ -38,76 +38,53 @@ A sleek Flutter application for tracking fitness activities and stats!
 |-----------|----------|-----|
 | ![NUTRITION](https://github.com/user-attachments/assets/67531541-5ada-48b0-8127-94367fd6af84) | ![ACTIVITY](https://github.com/user-attachments/assets/8605fbd8-6c8e-49d6-8865-818ed2e806e7) | ![GYM](https://github.com/user-attachments/assets/8c0dcf24-2262-4e58-8a9d-743ae49b4663) |
 
-| WORKOUT |
-|---------|
-| ![WORKOUT](https://raw.githubusercontent.com/YOUR_USERNAME/screenshots/workout.png) |
---
+---
+
 ## 🧱 Project Structure
 
+```bash
 features/
 ├── activities/
 ├── auth/
-│ └── presentation/
-│ ├── password_sent_screen.dart
-│ ├── reset_password_screen.dart
-│ ├── signin_screen.dart
-│ ├── signup_screen.dart
-│ ├── splash_screen.dart
-│ └── welcome_screen.dart
+│   └── presentation/
+│       ├── password_sent_screen.dart
+│       ├── reset_password_screen.dart
+│       ├── signin_screen.dart
+│       ├── signup_screen.dart
+│       ├── splash_screen.dart
+│       └── welcome_screen.dart
 ├── bodybuilding/
-│ ├── domain/
-│ │ └── models/
-│ └── presentation/
+│   ├── domain/
+│   │   └── models/
+│   └── presentation/
 ├── calorie_stats/
-│ ├── domain/
-│ │ └── models/
-│ └── presentation/
-│ └── calorie_stats_screen.dart
+│   ├── domain/
+│   │   └── models/
+│   └── presentation/
+│       └── calorie_stats_screen.dart
 ├── home/
-│ └── presentation/
-│ └── home_screen.dart
+│   └── presentation/
+│       └── home_screen.dart
 ├── hydration/
-│ └── presentation/
-│ └── hydration_screen.dart
+│   └── presentation/
+│       └── hydration_screen.dart
 ├── nutritions/
-│ └── presentation/
-│ ├── add_new_meal_screen.dart
-│ └── category_selection_screen.dart
+│   └── presentation/
+│       ├── add_new_meal_screen.dart
+│       └── category_selection_screen.dart
 ├── nutrition/
-│ └── presentation/
-│ ├── nutrition_screen.dart
-│ └── scanning_screen.dart
+│   └── presentation/
+│       ├── nutrition_screen.dart
+│       └── scanning_screen.dart
 └── search/
-└── presentation/
-└── search_screen.dart
---
-
-## 🧑‍💻 Author
-
-### Muhammad Husnain Shahid
-
-<p align="left">
-  <a href="https://github.com/muhammadhusnainshahid">
-    <img src="https://img.shields.io/badge/GitHub-Follow-blue?logo=github" alt="GitHub Follow"/>
-  </a>
-  <a href="https://www.instagram.com/the.husnainshahid">
-    <img src="https://img.shields.io/badge/Instagram-Follow-e4405f?logo=instagram" alt="Instagram"/>
-  </a>
-  <a href="https://www.linkedin.com/in/muhammad-husnain-shahid-36b34b26b">
-    <img src="https://img.shields.io/badge/LinkedIn-Connect-0077B5?logo=linkedin" alt="LinkedIn"/>
-  </a>
-</p>
-
+    └── presentation/
+        └── search_screen.dart
+🧑‍💻 Author
+Muhammad Husnain Shahid
+<p align="left"> <a href="https://github.com/muhammadhusnainshahid"> <img src="https://img.shields.io/badge/GitHub-Follow-blue?logo=github" alt="GitHub Follow"/> </a> <a href="https://www.instagram.com/the.husnainshahid"> <img src="https://img.shields.io/badge/Instagram-Follow-e4405f?logo=instagram" alt="Instagram"/> </a> <a href="https://www.linkedin.com/in/muhammad-husnain-shahid-36b34b26b"> <img src="https://img.shields.io/badge/LinkedIn-Connect-0077B5?logo=linkedin" alt="LinkedIn"/> </a> </p>
 If you liked this project, consider giving it a ⭐ and sharing it with others.
 
----
-
-## ☕ Support My Work
-
+☕ Support My Work
 Consider supporting me to keep creating open-source Flutter projects:
 
-<p align="left">
-  <a href="https://www.buymeacoffee.com/muhammadhusnainshahid" target="_blank">
-    <img src="https://img.shields.io/badge/BuyMeACoffee-Support-FFDD00?logo=buymeacoffee" alt="Buy Me a Coffee"/>
-  </a>
-</p>
+<p align="left"> <a href="https://www.buymeacoffee.com/muhammadhusnainshahid" target="_blank"> <img src="https://img.shields.io/badge/BuyMeACoffee-Support-FFDD00?logo=buymeacoffee" alt="Buy Me a Coffee"/> </a> </p> ```
