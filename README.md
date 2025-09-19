@@ -113,11 +113,4 @@ flutter run
 ## 📜 License
 
 This project is licensed under the **MIT License**.
-
-```
-
----
-
-⚡ Ye full **professional README** structure hai.  
-Kya aap chahte ho main isme **Firebase setup guide** aur **APK download link section** bhi add kar dun?
 ```
