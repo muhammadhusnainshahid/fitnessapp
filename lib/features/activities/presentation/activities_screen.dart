@@ -37,41 +37,7 @@ class _ActivitiesScreenState extends State<ActivitiesScreen> {
             onPressed: () => Navigator.pop(
                 context), // Back button kaam karega agar push se aaye
           ),
-          title: const Text(
-            "Add New Activity",
-            style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
-          ),
-          centerTitle: true,
-        ),
-        body: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 20),
-          child: Column(
-            children: [
-              const SizedBox(height: 5),
-              const Text(
-                "Please select activity type",
-                style: TextStyle(fontSize: 14, color: Colors.black54),
-              ),
-              const SizedBox(height: 20),
-              Expanded(
-                child: GridView.builder(
-                  itemCount: activities.length,
-                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: 3,
-                    mainAxisSpacing: 15,
-                    crossAxisSpacing: 15,
-                    childAspectRatio: 1,
-                  ),
-                  itemBuilder: (context, index) {
-                    final isSelected = selectedIndex == index;
-                    return GestureDetector(
-                      onTap: () => setState(() => selectedIndex = index),
-                      child: AnimatedContainer(
-                        duration: const Duration(milliseconds: 300),
-                        decoration: BoxDecoration(
-                          color: isSelected
-                              ? AppColors.primary
-                              : Colors.grey.shade100,
+        
                           borderRadius: BorderRadius.circular(16),
                           boxShadow: [
                             if (isSelected)
