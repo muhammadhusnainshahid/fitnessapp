@@ -11,7 +11,19 @@ A sleek Flutter application for tracking fitness activities and stats!
 - 💾 Data persistence with local database and optional cloud sync.
 
 ---
+---
 
+## 🚀 Live Demo
+
+👉 [Click here to try the Live Demo](https://fitnesssd-12wa.web.app/)
+
+<p align="left">
+  <a href="https://fitnesssd-12wa.web.app/" target="_blank">
+    <img src="https://img.shields.io/badge/Live%20Demo-Click%20Here-brightgreen?style=for-the-badge&logo=flutter" alt="Live Demo"/>
+  </a>
+</p>
+
+---
 ## 📸 Screenshots
 
 | SPLASH | WELCOME | SIGNIN |
