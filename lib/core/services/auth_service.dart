@@ -37,50 +37,7 @@ class _AuthScreenState extends State<AuthScreen> {
   final _emailController = TextEditingController();
   final _passwordController = TextEditingController();
 
-  bool _isLoading = false;
-  bool _isLogin = true;
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(_isLogin ? 'Login' : 'Sign Up'),
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.logout),
-            onPressed: _authService.signOut,
-            tooltip: 'Sign Out',
-          ),
-        ],
-      ),
-      body: StreamBuilder<User?>(
-        stream: _authService.authStateChanges,
-        builder: (context, snapshot) {
-          if (snapshot.connectionState == ConnectionState.waiting) {
-            return const Center(child: CircularProgressIndicator());
-          }
-
-          if (snapshot.hasData && snapshot.data != null) {
-            return UserProfileScreen(user: snapshot.data!);
-          }
-
-          return _buildAuthForm();
-        },
-      ),
-    );
-  }
-
-  Widget _buildAuthForm() {
-    return SingleChildScrollView(
-      padding: const EdgeInsets.all(16.0),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          Text(
-            _isLogin ? 'Welcome Back' : 'Create Account',
-            style: Theme.of(context).textTheme.headlineSmall,
-            textAlign: TextAlign.center,
-          ),
           const SizedBox(height: 24),
           TextField(
             controller: _emailController,
