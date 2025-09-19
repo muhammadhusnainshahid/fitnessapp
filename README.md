@@ -41,14 +41,46 @@ A sleek Flutter application for tracking fitness activities and stats!
 | WORKOUT |
 |---------|
 | ![WORKOUT](https://raw.githubusercontent.com/YOUR_USERNAME/screenshots/workout.png) |
-
----
-
+--
 ## 🧱 Project Structure
 
-<img width="391" height="242" alt="Project Structure" src="https://user-images.githubusercontent.com/YOUR_USERNAME/screenshots/project-structure.png" />
-
----
+features/
+├── activities/
+├── auth/
+│ └── presentation/
+│ ├── password_sent_screen.dart
+│ ├── reset_password_screen.dart
+│ ├── signin_screen.dart
+│ ├── signup_screen.dart
+│ ├── splash_screen.dart
+│ └── welcome_screen.dart
+├── bodybuilding/
+│ ├── domain/
+│ │ └── models/
+│ └── presentation/
+├── calorie_stats/
+│ ├── domain/
+│ │ └── models/
+│ └── presentation/
+│ └── calorie_stats_screen.dart
+├── home/
+│ └── presentation/
+│ └── home_screen.dart
+├── hydration/
+│ └── presentation/
+│ └── hydration_screen.dart
+├── nutritions/
+│ └── presentation/
+│ ├── add_new_meal_screen.dart
+│ └── category_selection_screen.dart
+├── nutrition/
+│ └── presentation/
+│ ├── nutrition_screen.dart
+│ └── scanning_screen.dart
+└── search/
+└── presentation/
+└── search_screen.dart
+--
 
 ## 🧑‍💻 Author
 
