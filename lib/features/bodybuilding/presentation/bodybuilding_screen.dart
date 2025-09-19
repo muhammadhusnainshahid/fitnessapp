@@ -42,40 +42,6 @@ class _BodybuildingScreenState extends State<BodybuildingScreen> {
     secondaryColor =
         widget.isFemale ? Colors.purple.shade300 : Colors.cyan.shade300;
 
-    muscleGroups = [
-      if (widget.isFemale) ...[
-        MuscleGroup(
-          name: "Glutes",
-          icon: Icons.directions_run,
-          image: AppImages.femaleGlutesWorkout,
-          primaryColor: primaryColor,
-          exercises: _getFemaleGlutesExercises(),
-          isForFemale: true,
-        ),
-        MuscleGroup(
-          name: "Legs",
-          icon: Icons.directions_walk,
-          image: AppImages.femaleLegWorkout,
-          primaryColor: primaryColor,
-          exercises: _getFemaleLegsExercises(),
-          isForFemale: true,
-        ),
-        MuscleGroup(
-          name: "Core",
-          icon: Icons.fitness_center,
-          image: AppImages.femaleAbsWorkout,
-          primaryColor: primaryColor,
-          exercises: _getFemaleCoreExercises(),
-          isForFemale: true,
-        ),
-        MuscleGroup(
-          name: "Upper Body",
-          icon: Icons.accessibility_new,
-          image: AppImages.femaleUpperBody,
-          primaryColor: primaryColor,
-          exercises: _getFemaleUpperBodyExercises(),
-          isForFemale: true,
-        ),
         MuscleGroup(
           name: "Full Body",
           icon: Icons.self_improvement,
