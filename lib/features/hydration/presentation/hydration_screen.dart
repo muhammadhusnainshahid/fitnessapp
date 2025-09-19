@@ -19,59 +19,7 @@ class HydrationScreen extends StatelessWidget {
                     onTap: () => Navigator.pop(context),
                     child: const Icon(Icons.arrow_back, size: 28),
                   ),
-                  const Spacer(),
-                  const Text(
-                    'Hydration',
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 20,
-                    ),
-                  ),
-                  const Spacer(flex: 2),
-                ],
-              ),
-            ),
-
-            const SizedBox(height: 20),
-
-            // Water Intake Display
-            const Text.rich(
-              TextSpan(
-                children: [
-                  TextSpan(
-                    text: '500',
-                    style: TextStyle(
-                      fontSize: 38,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.black,
-                    ),
-                  ),
-                  TextSpan(
-                    text: 'ml',
-                    style: TextStyle(
-                      fontSize: 20,
-                      color: Colors.black,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            const SizedBox(height: 8),
-            const Text(
-              'You need 1500ml for today.',
-              style: TextStyle(fontSize: 16, color: Colors.black54),
-            ),
-
-            const SizedBox(height: 40),
-
-            // Hydration Goal Section
-            Expanded(
-              child: Container(
-                width: double.infinity,
-                decoration: const BoxDecoration(
-                  color: Color(0xFFEDEDED),
-                  borderRadius: BorderRadius.vertical(top: Radius.circular(40)),
-                ),
+                
                 padding: const EdgeInsets.all(20),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
