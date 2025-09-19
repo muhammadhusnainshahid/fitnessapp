@@ -23,11 +23,6 @@ class DefaultFirebaseOptions {
       case TargetPlatform.android:
         return android;
       case TargetPlatform.iOS:
-        return ios;
-      case TargetPlatform.macOS:
-        return macos;
-      case TargetPlatform.windows:
-        return windows;
       case TargetPlatform.linux:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for linux - '
@@ -40,23 +35,6 @@ class DefaultFirebaseOptions {
     }
   }
 
-  static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyDy8uT-1Ce1tntOEvcWmWwl4l-rYvBujNc',
-    appId: '1:177260480258:web:06c1940115131122f9241b',
-    messagingSenderId: '177260480258',
-    projectId: 'fitness-app-934f0',
-    authDomain: 'fitness-app-934f0.firebaseapp.com',
-    storageBucket: 'fitness-app-934f0.firebasestorage.app',
-    measurementId: 'G-75MB5VWEBW',
-  );
-
-  static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyDniYN0PNpl3V4DSp7b9QxEw3Ja8uhcQjk',
-    appId: '1:177260480258:android:afc9f3b7d1b1617bf9241b',
-    messagingSenderId: '177260480258',
-    projectId: 'fitness-app-934f0',
-    storageBucket: 'fitness-app-934f0.firebasestorage.app',
-  );
 
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'AIzaSyC0Lembgud7peNehDfFX_Rrbc7_1i5WZQc',
