@@ -1,90 +1,125 @@
+
 # 🏋️ Fitness App
 
-A sleek Flutter application for tracking fitness activities and stats!
-
-## ✨ Features
-
-- 📊 Track workouts, steps, and calories burned.
-- ⏱️ Timer and session logging for different exercises.
-- 🧪 Organized architecture with clear separation of concerns (UI, Controller, Model, Service).
-- 📱 Responsive UI with Flutter ScreenUtil for different devices.
-- 💾 Data persistence with local database and optional cloud sync.
+A modern fitness mobile app built with **Flutter** that helps users track their workouts, nutrition, hydration, and overall health.
 
 ---
 
-## 🚀 Live Demo
-
-👉 [Click here to try the Live Demo](https://fitnesssd-12wa.web.app/)
-
-<p align="left">
-  <a href="https://fitnesssd-12wa.web.app/" target="_blank">
-    <img src="https://img.shields.io/badge/Live%20Demo-Click%20Here-brightgreen?style=for-the-badge&logo=flutter" alt="Live Demo"/>
-  </a>
-</p>
+## 🔗 Live Demo
+👉 [Try the App Here](https://fitnesssd-12wa.web.app/)
 
 ---
 
 ## 📸 Screenshots
 
-| SPLASH | WELCOME | SIGNIN |
-|--------|---------|--------|
-| ![SPLASH](https://github.com/user-attachments/assets/a8c8d8ee-f664-4fca-82b4-5f718a9487c3) | ![WELCOME](https://github.com/user-attachments/assets/74be7e79-a576-42bd-aff3-10618cab3c84) | ![SIGNIN](https://github.com/user-attachments/assets/37ae3f0e-9200-4295-b56b-8cec5081caad) |
+| Splash | Welcome | Sign In | Sign Up |
+|--------|---------|---------|---------|
+| ![SPLASH](https://github.com/user-attachments/assets/a8c8d8ee-f664-4fca-82b4-5f718a9487c3) | ![WELCOME](https://github.com/user-attachments/assets/74be7e79-a576-42bd-aff3-10618cab3c84) | ![SIGNIN](https://github.com/user-attachments/assets/37ae3f0e-9200-4295-b56b-8cec5081caad) | ![SIGNUP](https://github.com/user-attachments/assets/232b6337-202d-459e-9db7-43b9313203f3) |
 
-| SIGNUP | HOME | SETTINGS |
-|--------|------|----------|
-| ![SIGNUP](https://github.com/user-attachments/assets/232b6337-202d-459e-9db7-43b9313203f3) | ![HOME](https://github.com/user-attachments/assets/4e2fbb33-a572-4c32-a925-d122b807a5e2) | ![SETTINGS](https://github.com/user-attachments/assets/c22df8ce-ea19-49d8-acc6-cccf86e266a2) |
-
-| NUTRITION | ACTIVITY | GYM |
-|-----------|----------|-----|
-| ![NUTRITION](https://github.com/user-attachments/assets/67531541-5ada-48b0-8127-94367fd6af84) | ![ACTIVITY](https://github.com/user-attachments/assets/8605fbd8-6c8e-49d6-8865-818ed2e806e7) | ![GYM](https://github.com/user-attachments/assets/8c0dcf24-2262-4e58-8a9d-743ae49b4663) |
+| Home | Settings | Nutrition | Activity | Gym |
+|------|----------|-----------|----------|-----|
+| ![HOME](https://github.com/user-attachments/assets/4e2fbb33-a572-4c32-a925-d122b807a5e2) | ![SETTINGS](https://github.com/user-attachments/assets/c22df8ce-ea19-49d8-acc6-cccf86e266a2) | ![NUTRITION](https://github.com/user-attachments/assets/67531541-5ada-48b0-8127-94367fd6af84) | ![ACTIVITY](https://github.com/user-attachments/assets/8605fbd8-6c8e-49d6-8865-818ed2e806e7) | ![GYM](https://github.com/user-attachments/assets/8c0dcf24-2262-4e58-8a9d-743ae49b4663) |
 
 ---
 
 ## 🧱 Project Structure
 
-```bash
+<img width="391" height="242" alt="Project Structure" src="https://user-images.githubusercontent.com/YOUR_USERNAME/screenshots/project-structure.png" />
+
+```
+
 features/
-├── activities/
-├── auth/
+│── activities/               # User activities tracking
+│
+│── auth/                     # Authentication
+│   └── presentation/          # UI Screens
+│       ├── splash\_screen.dart
+│       ├── welcome\_screen.dart
+│       ├── signin\_screen.dart
+│       ├── signup\_screen.dart
+│       ├── reset\_password\_screen.dart
+│       └── password\_sent\_screen.dart
+│
+│── bodybuilding/              # Bodybuilding features
+│   ├── domain/models/
 │   └── presentation/
-│       ├── password_sent_screen.dart
-│       ├── reset_password_screen.dart
-│       ├── signin_screen.dart
-│       ├── signup_screen.dart
-│       ├── splash_screen.dart
-│       └── welcome_screen.dart
-├── bodybuilding/
-│   ├── domain/
-│   │   └── models/
+│
+│── calorie\_stats/             # Calorie Tracking
+│   ├── domain/models/
 │   └── presentation/
-├── calorie_stats/
-│   ├── domain/
-│   │   └── models/
+│       └── calorie\_stats\_screen.dart
+│
+│── home/                      # Home Screen
 │   └── presentation/
-│       └── calorie_stats_screen.dart
-├── home/
+│       └── home\_screen.dart
+│
+│── hydration/                 # Hydration Tracking
 │   └── presentation/
-│       └── home_screen.dart
-├── hydration/
+│       └── hydration\_screen.dart
+│
+│── nutritions/                # Nutrition Module
 │   └── presentation/
-│       └── hydration_screen.dart
-├── nutritions/
+│       ├── add\_new\_meal\_screen.dart
+│       ├── category\_selection\_screen.dart
+│       └── nutrition\_screen.dart
+│
+│── search/                    # Search Features
 │   └── presentation/
-│       ├── add_new_meal_screen.dart
-│       └── category_selection_screen.dart
-├── nutrition/
-│   └── presentation/
-│       ├── nutrition_screen.dart
-│       └── scanning_screen.dart
-└── search/
-    └── presentation/
-        └── search_screen.dart
-🧑‍💻 Author
-Muhammad Husnain Shahid
-<p align="left"> <a href="https://github.com/muhammadhusnainshahid"> <img src="https://img.shields.io/badge/GitHub-Follow-blue?logo=github" alt="GitHub Follow"/> </a> <a href="https://www.instagram.com/the.husnainshahid"> <img src="https://img.shields.io/badge/Instagram-Follow-e4405f?logo=instagram" alt="Instagram"/> </a> <a href="https://www.linkedin.com/in/muhammad-husnain-shahid-36b34b26b"> <img src="https://img.shields.io/badge/LinkedIn-Connect-0077B5?logo=linkedin" alt="LinkedIn"/> </a> </p>
-If you liked this project, consider giving it a ⭐ and sharing it with others.
+│       └── search\_screen.dart
 
-☕ Support My Work
-Consider supporting me to keep creating open-source Flutter projects:
+````
 
-<p align="left"> <a href="https://www.buymeacoffee.com/muhammadhusnainshahid" target="_blank"> <img src="https://img.shields.io/badge/BuyMeACoffee-Support-FFDD00?logo=buymeacoffee" alt="Buy Me a Coffee"/> </a> </p> ```
+---
+
+## 🚀 Features
+
+- 🔐 User Authentication (Sign In / Sign Up / Reset Password)
+- 🏠 Home Dashboard with quick navigation
+- 🍎 Nutrition & Meal Tracking
+- 💧 Hydration Monitoring
+- 🔥 Calorie & Workout Stats
+- 💪 Bodybuilding Plans
+- 📊 Activity Tracking
+- 🔍 Search Functionality
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework:** Flutter  
+- **State Management:** Provider / Riverpod / Bloc (based on your setup)  
+- **Backend:** Firebase (Auth, Firestore, Hosting)  
+- **Database:** Cloud Firestore  
+- **Deployment:** Firebase Hosting  
+
+---
+
+## 📦 Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/YOUR_USERNAME/fitness-app.git
+
+# Navigate to project directory
+cd fitness-app
+
+# Install dependencies
+flutter pub get
+
+# Run the app
+flutter run
+````
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License**.
+
+```
+
+---
+
+⚡ Ye full **professional README** structure hai.  
+Kya aap chahte ho main isme **Firebase setup guide** aur **APK download link section** bhi add kar dun?
+```
